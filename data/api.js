@@ -4,6 +4,7 @@ export function saveUser(user) {
     localStorage.setItem('user', json);
 }
 
+// gets the user out of local storage
 export function getUser() {
     const json = localStorage.getItem('user');
     if (!json) return null;

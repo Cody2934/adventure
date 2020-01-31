@@ -16,7 +16,7 @@ const quest = findById(quests, questId);
 
 // if there's no such quest 
 if (!quest) {
-    window.location = '../map'; //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    window.location = '../map/'; //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 const title = document.getElementById('title');
@@ -30,8 +30,8 @@ const resultDescription = document.getElementById('result-description');
 
 // use the quest that we found to populate the dom
 title.textContent = quest.title;
-image.src = '../assets/quests/' + quest.image;
-audio.src = '../assets/quests/' + quest.audio;
+image.src = '../assets/' + quest.image;
+audio.src = '../assets/' + quest.audio;
 description.textContent = quest.description;
 
 // for each of the quest's choices
@@ -49,7 +49,7 @@ choiceForm.addEventListener('submit', function(event) {
     // get user choice
     const formData = new FormData(choiceForm);
     const choiceId = formData.get('choice');
-    // use old faitful to find the choice
+    // use old faithful to find the choice
     const choice = findById(quest.choices, choiceId);
 
     // get user out of local storage
@@ -59,8 +59,8 @@ choiceForm.addEventListener('submit', function(event) {
     // save user
     saveUser(user);
 
-    // update UI
-    audio.src = '../assets/quests/' + quest.action;
+    // update DOM
+    audio.src = '../assets' + quest.action;//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     choiceForm.classList.add('hidden');
     result.classList.remove('hidden');
     resultDescription.textContent = choice.result;

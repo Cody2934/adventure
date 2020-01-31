@@ -12,7 +12,7 @@ const storyDisplay = document.getElementById('story-display');
 const mindResult = scoreMind(user.mind);
 const mindMessage = mindMessages[mindResult];
 
-let story = 'After your time at Alchemy, ';
+let story = 'After one day, ';
 story += user.name + ', ';
 story += mindMessage + '.';
 

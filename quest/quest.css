@@ -5,6 +5,10 @@ main {
     margin-bottom: 75px;
 }
 
+img {
+    width: 250px;
+}
+
 .choice {
     display: block;
     list-style: none;
@@ -16,11 +20,11 @@ main {
 }
 
 #result {
-    background: #e38548;
+    background: whitesmoke;
     padding: 20px;
 }
 
 #result-description {
-    background: #e38548;
+    background: whitesmoke;
     font-weight: bolder;
 }

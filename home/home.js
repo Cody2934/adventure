@@ -5,7 +5,7 @@ import makeUser from './make-user.js';
 const userSignUp = document.getElementById('user-sign-up');
 
 // adding an eventListener to the button and prevent button from refreshing or redirecting
-userSignUp.addEventListener('submit', function (event) {
+userSignUp.addEventListener('submit', function(event) {
     event.preventDefault();
 
     // make a new form data object

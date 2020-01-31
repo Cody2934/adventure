@@ -21,7 +21,7 @@ function loadProfile() {
 
     // if they chose one of the ending scenarios, say so in the header
     if (isBrainDead(user)) {
-        mind.textContent = 'You Didnt Make It';
+        mind.textContent = `You Didn't' Make It`;
     }
     else {
         // otherwise show the user mind score

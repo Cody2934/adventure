@@ -3,18 +3,17 @@ import quests from '../data/quest-data.js';
 import loadProfile from '../common/load-profile.js';
 import createQuestLink from './create-quest-link.js';
 import createCompletedQuest from './create-completed-quest.js';
-import hasCompletedAllQuests from './has-completed-all-quests.js';
+import hasCompletedAllQuests from './has-competed-all-quests.js';
 import isBrainDead from '../common/is-brain-dead.js';
 
-loadProfile(); // i predict we'll load the header on every page but the home page
+loadProfile(); 
 
 // go grab the user from localStorage
 const user = getUser();
 
-// if they're dead, or if they've completed all the quests
+// if they're BrainDead or if they've completed all the quests send them to results page
 if (isBrainDead(user) || hasCompletedAllQuests(quests, user)) {
-    // send them to the results page
-    window.location = '../results';
+    window.location = '/result/index.html';
 }
 // getting some quest element from DOM
 const nav = document.getElementById('quests');
@@ -26,11 +25,11 @@ for (let i = 0; i < quests.length; i++) {
 
     // if the user has completed it
     if (user.completed[quest.id]) {
-        // make a completed quest display (with a checkmark)
+        // make a completed quest display (with a check-mark)
         questDisplay = createCompletedQuest(quest);
     }
     else {
-        // otherwiese, make a link to the quest
+        // otherwise, make a link to the quest
         questDisplay = createQuestLink(quest);
     }
     nav.appendChild(questDisplay); // add the quest display to the nav

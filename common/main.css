@@ -5,7 +5,7 @@ body {
 }
 
 h1, h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 * {
@@ -21,10 +21,13 @@ header, main {
 }
 
 header {
+    color: rgba(210, 243, 179, 0.856);
+    font-size: x-large;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-image: url(https://www.isteamstudio.com/wp-content/uploads/2018/03/electricity-technology-colorful-background-header.jpg);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: slategrey;
     border-bottom: 2px dotted black;
 }
 
@@ -60,3 +63,5 @@ button {
     border: 2px solid rgb(28, 110, 164); 
     display: inline-block;
 }
+
+

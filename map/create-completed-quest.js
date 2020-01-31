@@ -12,3 +12,8 @@ function createCompletedQuest(quest) {
 }
 
 export default createCompletedQuest;
+
+
+
+//something to add class to link and once clicked css
+//grab id from quest and target when completed

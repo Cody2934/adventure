@@ -3,7 +3,7 @@ import quests from '../data/quest-data.js';
 import loadProfile from '../common/load-profile.js';
 import createQuestLink from './create-quest-link.js';
 import createCompletedQuest from './create-completed-quest.js';
-import hasCompletedAllQuests from './has-competed-all-quests.js';
+import hasCompletedAllQuests from './has-completed-all-quests.js';
 import isBrainDead from '../common/is-brain-dead.js';
 
 loadProfile(); 
@@ -22,6 +22,7 @@ for (let i = 0; i < quests.length; i++) {
     // for every quest
     const quest = quests[i];
     let questDisplay = null;
+
 
     // if the user has completed it
     if (user.completed[quest.id]) {

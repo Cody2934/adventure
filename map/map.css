@@ -1,7 +1,7 @@
 #quests {
     position: relative;
     background-image: url("/assets/map.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 90vw;
     height: calc(90vw * 642 / 900);
@@ -10,20 +10,22 @@
 
 .quest {
     position: absolute;
-    color: white;
+    color: black;
     text-shadow: 1px 1px 1px black;
 }
 
-/* .quest.completed:after {
+.quest.completed {
     color: rgb(196, 23, 23);
-    font-size: .9em;
-}
-
-.quest.completed:after {
-    content: ' ✔';
-} */
-
-a:after {
     text-decoration: line-through;
 }
+
+/* .side {
+    
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;   
+} */
+
+
 

@@ -1,0 +1,19 @@
+//copied from danny and honestly not 100% sure what it does.
+function createCompletedQuest(quest) {
+    const span = document.createElement('span');
+    span.classList.add('quest');
+    span.classList.add('completed');
+
+    span.style.top = quest.map.top;
+    span.style.left = quest.map.left;
+
+    span.textContent = quest.title;
+    return span;
+}
+
+export default createCompletedQuest;
+
+
+
+//something to add class to link and once clicked css
+//grab id from quest and target when completed

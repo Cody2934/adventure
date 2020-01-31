@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surviving Alchemy</title>
+    <link rel="stylesheet" href="quest.css">
+    <link rel="stylesheet" href="../common/main.css">
+    <link rel="stylesheet" href="../common/profile.css">
+</head>
+
+<body>
+    <header>
+        <h1>Surviving Alchemy</h1>
+        <div class="profile">
+            <span id="name"></span>
+            <span class="profile-stat-label">Mind:</span>
+            <span id="mind"></span>
+        </div>
+    </header>
+    
+    <main> 
+        <h2 id="title"></h2>
+        <p>
+            <img id="image">
+            <audio id="audio" autoplay></audio>
+        </p>
+        <p id="description"></p>
+        <form id="choice-form">
+            <p id="choices"></p>
+            <button>What Will You Do?</button>
+        </form>
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
+            <a href="/map/index.html">Pick another door</a>
+        </section>
+    </main>
+
+    <script type="module" src="quest.js"></script>
+</body>
+</html>
